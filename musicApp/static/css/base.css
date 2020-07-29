@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 4.5rem;
+  position: fixed;
+  z-index: 1;
+  padding: 0 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+}
+
+.header .brand-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c0bcbc;
+  margin-top: 2rem;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-item {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.header .header-item a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #c0bcbc;
+}
+
+.header .header-item a:hover, .header .header-item a:active {
+  color: white;
+}
+
+.header .header-item:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(255, 250, 250, 0.3)), to(transparent));
+  background: linear-gradient(to top, rgba(255, 250, 250, 0.3) 5%, transparent);
+}
+
+.bg-1 {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(0, 0, 0, 0.6)), to(transparent)), url("../images/gettyimages-545098584-2048x2048.jpg"), #2E294E;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.6) 10%, transparent), url("../images/gettyimages-545098584-2048x2048.jpg"), #2E294E;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 55rem;
+}
+/*# sourceMappingURL=base.css.map */

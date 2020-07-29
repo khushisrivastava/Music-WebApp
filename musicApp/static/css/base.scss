@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-$light: #EADEDA;
+$light: #c0bcbc;
 $yellow: #FFD400;
 $dark: #2E294E;
 
@@ -24,19 +24,20 @@ body{
 .header{
     @include display-flex;
     width: 100%;
-    height: 3.5rem;
-    background: $dark;
+    height: 4.5rem;
     position: fixed;
     z-index: 1;
     padding: 0 1rem;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     font-size: 1rem;
 
     .brand-logo{
         text-decoration: none;
+        font-size: 1.5rem;
         font-weight: bold;
         color: $light;
+        margin-top: 2rem;
     }
 
     ul{
@@ -47,16 +48,33 @@ body{
         justify-content: space-between;
     }
 
-    li{
-        margin: 1rem;
-        padding: .5rem;
+    .header-item{
+        width: 100%;
+        height: 100%;
+        padding: 2rem 2rem 0 2rem;
         a{
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
             text-decoration: none;
+            font-size: 1.2rem;
             color: $light;
+
+            &:hover,
+            &:active{
+                color: white;
+            }
         }
-        :hover,
-        :active{
-            color: $yellow;            
+        &:hover{
+            background: linear-gradient(to top, rgba(255, 250, 250, 0.3)5%, transparent);
         }
     }
+}
+
+.bg-1{
+    background: linear-gradient(to top right, rgba(0,0,0,0.6)10%, transparent),  url('../images/gettyimages-545098584-2048x2048.jpg'), $dark;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 55rem;
 }
