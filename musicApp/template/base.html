@@ -13,21 +13,24 @@
         <nav>
             <ul class="header-items">
                 <li class="header-item">
-                    <a href="#">Songs</a>
+                    <div>
+                        <a href="#">Songs</a> 
+                    </div>
+                    <!-- <a href="#">Songs</a> -->
                 </li>
                 <li class="header-item">
-                    <a href="#">Playlist</a>
+                    <div>
+                        <a href="#">Playlist</a>
+                    </div>
+                    <!-- <a href="#">Playlist</a> -->
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="bg-1"></section>
-        <section>
-            <h1>songs</h1>
-            <h2>hi</h2>
-            <h3>bye</h3>
-        </section>
+        {% block content %}
+        {% endblock content %}
     </main>
 </body>
 
