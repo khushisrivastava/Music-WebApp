@@ -24,6 +24,7 @@ body{
 .header{
     @include display-flex;
     width: 100%;
+    top: 0;
     height: 4.5rem;
     position: fixed;
     z-index: 1;
@@ -31,6 +32,7 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     font-size: 1rem;
+    transition: top 900ms;
 
     .brand-logo{
         text-decoration: none;
@@ -70,7 +72,6 @@ body{
         }
     }
 }
-
 .bg-1{
     background: linear-gradient(to top right, rgba(0,0,0,0.6)10%, transparent),  url('../images/gettyimages-545098584-2048x2048.jpg'), $dark;
     background-size: cover;

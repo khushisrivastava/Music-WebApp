@@ -18,6 +18,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  top: 0;
   height: 4.5rem;
   position: fixed;
   z-index: 1;
@@ -29,6 +30,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1rem;
+  -webkit-transition: top 900ms;
+  transition: top 900ms;
 }
 
 .header .brand-logo {
